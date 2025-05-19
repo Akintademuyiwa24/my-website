@@ -13,10 +13,11 @@ const Hero = () => {
           </aside>
 
           <main className="md:ml-1/3 w-full md:w-2/3 px-8 py-10 ml-0 md:ml-[33.333333%] text-white ">
-              <section className="mb-3 md:px-20 py-3 font-inter text-[#999ca0] max-w-prose text-left leading-relaxed md:text-justify">
+        <section className="mb-3 md:px-20 py-3 font-inter text-[#999ca0] leading-relaxed md:text-justify">
+                  <h3 className="sm:hidden font-inter text-white p-4">ABOUT</h3>
                    <p>I'm a frontend engineer who is result-driven, with expertise in React ecosystem, delivering responsive web applications that balance technical excellence with outstanding user experiences. Skilled at translating complex requirements into clean, efficient code while collaborating effectively across teams.</p>
               </section>
-              <section className="mb-20 group md:px-20 md:py-3 font-inter text-[#999ca0] text-left max-w-prose mx-auto md:text-justify">
+              <section className="mb-20 group md:px-20 md:py-3 font-inter text-[#999ca0]  ">
                   <p className="leading-relaxed tracking-normal">I'm currently a Graduate Trainee in the Frontend Engineering Team at <a href="https://seerbit.com" target="_blank" rel="noopener noreferrer" className=" group-hover:text-amber-600 text-white md:ml-1">Seerbit</a>, a fintech company focused on powering seamless digital payments across Africa. I contribute to building user-facing components that support payment solutions for merchants and businesses. From developing responsive UI to collaborating with cross functional teams on dashboard and checkout experiences, I am growing my skills in shipping real, production level financial technology products.
                   </p>
                   

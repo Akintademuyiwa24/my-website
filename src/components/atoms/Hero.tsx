@@ -75,7 +75,7 @@ const Hero = () => {
 
           <main className="md:ml-1/3 w-full md:w-2/3 px-8 py-10 ml-0 md:ml-[33.333333%] text-white ">
         <section className="mb-3 md:px-20 py-3 font-inter text-[#999ca0] leading-relaxed md:text-justify">
-                  <h3 className="sm:hidden font-inter text-white p-4">ABOUT</h3>
+                  <h3 className="sm:hidden font-inter mb-1 border-b-1 border-blue-300 w-[100px] text-blue-100 text-[10px]">ABOUT ME</h3>
                    <p>I'm a frontend engineer who is result-driven, with expertise in React ecosystem, delivering responsive web applications that balance technical excellence with outstanding user experiences. Skilled at translating complex requirements into clean, efficient code while collaborating effectively across teams.</p>
               </section>
               <section className="mb-20 group md:px-20 md:py-3 font-inter text-[#999ca0]  ">
@@ -86,7 +86,7 @@ const Hero = () => {
                   
               </section>
               <section className="md:px-20">
-             
+              <h3 className="sm:hidden font-inter mb-2 border-b-1 border-blue-300 w-[150px] text-blue-100 text-[10px]">PROFESSIONAL EXPERIENCE</h3>
                   <Experience date="2025 - PRESENT" title="Frontend Trainee, Seerbit" details="Supporting the development of web interfaces using React and Tailwind CSS. Assist with API testing using Postman, contribute to internal documentation, and carry out research to support feature implementation. Collaborate with other teams to build clean, responsive user experiences." data={ ["JavaScript", "TypeScript", "React", "Redux", "TailwindCSS"]} />
                   <Experience date="2023 - 2024" title="Frontend Intern, Thels Impact Consulting" details="Contributed to the development and styling of responsive web platforms and internal tools aimed at transforming higher education in Africa. Collaborated with cross-functional teams to build and refine user interfaces for research and innovation-focused websites and dashboards. Played a key role in translating design specs into functional, scalable components, while supporting UI consistency and improving user experience across various education tech projects" data={ ["JavaScript", "React", "TailwindCSS"]} />
                  
@@ -145,8 +145,8 @@ function WorkExperience() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-gray-900 text-white p-6 max-w-5xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6 font-inter">Skills and Technologies</h2>
+    <section className="bg-gray-900 text-white p-6 max-w-5xl lg:pl-50 lg:max-w-3xl mx-auto">
+      <h2 className="text-xl font-bold mb-6 font-inter">Skills and Technologies</h2>
       <div className="flex flex-col md:flex-row">
         {/* Tabs */}
         <div

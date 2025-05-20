@@ -25,7 +25,7 @@ const Experience = ({date, title, details, data}: ExperienceProps) => {
 
           <div className=" font-inter text-[#8892b0]">
               <h4 className="text-white mb-2 text-[16px] group-hover:text-cyan-200">{title}</h4>
-              <p className="text-[14px]">{details} </p>
+              <p className="text-[15px]">{details} </p>
               <Tools data={data}/>
           </div>
           

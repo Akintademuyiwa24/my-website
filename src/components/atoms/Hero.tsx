@@ -8,6 +8,7 @@ import ProjectSection from "./Project"
 import ContactSection from "./Contact"
 import OtherInterests from "./OtherInterests"
 import Footer from "./Footer"
+import ProfilePic from '../../assets/PhotoRoom-20230918_090015 (1).jpg'
 
 
 
@@ -76,9 +77,9 @@ const Hero = () => {
               {/* Profile Picture */}
               <div className="mt-10 mb-10">
                 <img
-                  src="https://i.pinimg.com/1200x/f4/d0/76/f4d076f7159ce6d99c8e0b853f97ee36.jpg"
+                  src={ProfilePic}
                   alt="Olumuyiwa Akintade"
-                  className="w-100 h-80 rounded-[120px] object-cover border-4 border-cyan-300 shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-50 h-50 rounded-full object-cover border-4 border-cyan-300 shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
               {/* navigation */}

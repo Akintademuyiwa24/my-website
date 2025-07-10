@@ -55,7 +55,7 @@ const Hero = () => {
 
     <div className="md:flex h-screeen overflow-hidden lg:justify-center lg:items-center lg:min-h-screen">
       {/* <button onClick={handleClick}>Change</button> */}
-          <aside className="md:fixed top-0 md:top-4 left-0 w-full md:w-1/3 md:h-screen p-8 md:block">
+          <aside className="md:fixed top-0 md:left-32 md:top-4 left-0 w-full md:w-1/3 md:h-screen p-8 md:block">
               {/* Logo */}
               <div className="flex items-center mb-20">
                 <div className="flex items-center justify-center w-9 h-9 rounded-full bg-cyan-300 shadow-lg mr-1">

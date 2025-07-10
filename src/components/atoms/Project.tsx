@@ -45,7 +45,7 @@ const projects: Project[] = [
 ];
 
 const ProjectSection = () => (
-  <section className="py-12 px-4 md:px-8 md:ml-8 md:max-w-[520px] lg:ml-10 lg:max-w-[880px]">
+  <section className="py-12 px-4 md:px-8 md:ml-8 md:max-w-[520px] lg:ml-10 lg:max-w-[880px] w-full">
     <h2 className="text-md font-bold text-cyan-300 mb-8 font-inter">Selected Projects</h2>
     <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
       {projects.map((project, idx) => (

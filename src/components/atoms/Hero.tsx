@@ -30,7 +30,7 @@ const socials: SocialIconProp[] = [
   },
   {
     name: 'Linkedln',
-    href: '/',
+    href: 'https://www.linkedin.com/in/akintadeolumuyiwa/',
     icon: LinkedlnIcon
   },
   {

@@ -11,12 +11,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Portfolio Website",
+    title: "Portfolio Website v1",
     description: "A modern, responsive portfolio website built with React and Tailwind CSS. Features dark mode, smooth animations, and a blog section.",
-    tags: ["React", "Tailwind", "TypeScript"],
-    github: "https://github.com/yourusername/portfolio",
-    demo: "https://yourportfolio.com",
-    image: "https://i.pinimg.com/736x/a3/54/6c/a3546c9735cf3794f25dd1ae3e61cad9.jpg"
+    tags: ["React", "Tailwind",],
+    github: "https://github.com/Akintademuyiwa24/portfolio",
+    demo: "https://portf-app.netlify.app",
+    image: "https://i.pinimg.com/1200x/21/0c/22/210c22ae1d578cc50ad1b201fd7c9ef0.jpg"
+  },
+  {
+    title: "XchangeLite",
+    description: "A modern currency exchange and conversion app with live rates. Instantly convert between currencies with real-time data and a clean, intuitive interface.",
+    tags: ["React", "REST API", "Live Data", "TailwindCSS", "TypeScript"],
+    github: "https://github.com/Olumuyiwa24/RateTracker", // Update with your actual repo if public
+    demo: "https://xchangelite.netlify.app",
+    image: "https://i.pinimg.com/736x/a3/54/6c/a3546c9735cf3794f25dd1ae3e61cad9.jpg" // Replace with a screenshot if you have one
   },
   {
     title: "E-commerce Dashboard",
@@ -37,7 +45,7 @@ const projects: Project[] = [
 ];
 
 const ProjectSection = () => (
-  <section className="py-12 px-4 md:px-8 md:ml-8 md:max-w-[480px] lg:ml-10 lg:max-w-[880px]">
+  <section className="py-12 px-4 md:px-8 md:ml-8 md:max-w-[520px] lg:ml-10 lg:max-w-[880px]">
     <h2 className="text-md font-bold text-cyan-300 mb-8 font-inter">Selected Projects</h2>
     <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
       {projects.map((project, idx) => (

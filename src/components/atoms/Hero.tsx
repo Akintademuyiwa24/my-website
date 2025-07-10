@@ -7,6 +7,7 @@ import { useState } from 'react'
 import ProjectSection from "./Project"
 import ContactSection from "./Contact"
 import OtherInterests from "./OtherInterests"
+import Footer from "./Footer"
 
 
 
@@ -51,16 +52,37 @@ const Hero = () => {
   return (
     
 
-    <div className="md:flex h-screeen overflow-hidden">
+    <div className="md:flex h-screeen overflow-hidden lg:justify-center lg:items-center lg:min-h-screen">
       {/* <button onClick={handleClick}>Change</button> */}
           <aside className="md:fixed top-0 md:top-4 left-0 w-full md:w-1/3 md:h-screen p-8 md:block">
-              
+              {/* Logo */}
+              <div className="flex items-center mb-20">
+                <div className="flex items-center justify-center w-9 h-9 rounded-full bg-cyan-300 shadow-lg mr-1">
+                  <span className="text-lg font-extrabold font-mono text-[#112240] tracking-widest select-none">E</span>
+                </div>
+                <span className="text-lg font-extrabold font-mono tracking-widest text-cyan-300 select-none">
+                  mmy
+                </span>
+                <span className="ml-0.2 text-lg font-bold font-sans tracking-tight text-white bg-cyan-400 px-1.5 py-0.1 rounded-md shadow-sm select-none">
+                  Corp
+                </span>
+              </div>
+              {/* End Logo */}
             <div className="h-full p-4 text-white">
                   <h1 className="font-inter font-bold text-4xl mb-2">Olumuyiwa Akintade</h1>
                   <h3 className="font-inter mb-3 font-bold text-lg">Frontend Engineer</h3>
               <p className="w-full md:w-[200px] text-inter"> I build optimized digital experience for the web.</p>
+
+              {/* Profile Picture */}
+              <div className="mt-10 mb-10">
+                <img
+                  src="https://i.pinimg.com/1200x/f4/d0/76/f4d076f7159ce6d99c8e0b853f97ee36.jpg"
+                  alt="Olumuyiwa Akintade"
+                  className="w-100 h-80 rounded-[120px] object-cover border-4 border-cyan-300 shadow-lg grayscale hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
               {/* navigation */}
-                <div className="hidden md:block mt-50 mb-120 cursor-pointer">
+                <div className="hidden md:block mt-20 mb-50 cursor-pointer">
                   <p className="mb-4">ABOUT</p>
                   <p className="mb-4">EXPERIENCE</p>
                   <p>CONTACT</p>
@@ -121,9 +143,12 @@ const Hero = () => {
               <section>
                 <ContactSection/>
               </section>
+
+              <section> <Footer /></section>
         
         
           </main>
+          
           
           
     </div>
@@ -172,7 +197,7 @@ function WorkExperience() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="border border-gray-500 rounded-md text-white p-6 max-w-5xl lg:pl-20 lg:max-w-[810px] mx-auto md:ml-18 md:max-w-[410px] lg:ml-20">
+    <section className="border border-gray-500 rounded-md text-white p-6 max-w-5xl lg:pl-20 lg:max-w-[810px] mx-auto md:ml-18 md:max-w-[450px] lg:ml-20">
       <h2 className="text-xl font-bold mb-6 font-inter">Skills and Technologies</h2>
       <div className="flex flex-col md:flex-row">
         {/* Tabs */}

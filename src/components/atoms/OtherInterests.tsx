@@ -1,6 +1,7 @@
 import { FaBookOpen, FaBolt, FaLeaf, FaPenFancy, FaRobot, FaUniversalAccess} from "react-icons/fa";
 
 
+
 const interests = [
     {
       icon: <FaBookOpen className="text-cyan-400 text-2xl group-hover:text-cyan-100 transition-colors duration-300" />,

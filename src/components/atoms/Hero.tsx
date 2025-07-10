@@ -4,6 +4,9 @@ import LinkedlnIcon from '../../assets/icons/2986200_linkdin_logo_media_social_i
 import GithubIcon from '../../assets/icons/2993771_github_social media_icon.svg'
 import MediumIcon from '../../assets/icons/8679345_medium_icon.svg'
 import { useState } from 'react'
+import ProjectSection from "./Project"
+import ContactSection from "./Contact"
+import OtherInterests from "./OtherInterests"
 
 
 
@@ -55,45 +58,69 @@ const Hero = () => {
             <div className="h-full p-4 text-white">
                   <h1 className="font-inter font-bold text-4xl mb-2">Olumuyiwa Akintade</h1>
                   <h3 className="font-inter mb-3 font-bold text-lg">Frontend Engineer</h3>
-          <p className="w-full md:w-[200px] text-inter"> I build optimized digital experience for the web.</p>
+              <p className="w-full md:w-[200px] text-inter"> I build optimized digital experience for the web.</p>
+              {/* navigation */}
+                <div className="hidden md:block mt-50 mb-120 cursor-pointer">
+                  <p className="mb-4">ABOUT</p>
+                  <p className="mb-4">EXPERIENCE</p>
+                  <p>CONTACT</p>
+                </div>
+              {/* end of nav */}
           
-          {/* icons */}
-        <div className="flex flex-wrap text-white gap-6 mt-4">
-          {
-            socials.map(({ icon, name, href }, index) => (
-              <a href={href} key={index} aria-label={name}>
-                <img src={icon} alt={name} className="w-6 h-6 hover:scale-110 transition-transform bg-[#999ca0] rounded-lg p-1 hover:bg-white"/>
-              </a>
-            ))
-            }
-            </div>
-          {/* end of icons */}
+              {/* icons */}
+                <div className="flex flex-wrap text-white gap-6 mt-4">
+                  {
+                    socials.map(({ icon, name, href }, index) => (
+                      <a href={href} key={index} aria-label={name}>
+                        <img src={icon} alt={name} className="w-6 h-6 hover:scale-110 transition-transform bg-[#999ca0] rounded-lg p-1 hover:bg-white"/>
+                      </a>
+                    ))
+                    }
+                </div>
+              {/* end of icons */}
 
             </div>
         
           </aside>
 
-          <main className="md:ml-1/3 w-full md:w-2/3 px-8 py-10 ml-0 md:ml-[33.333333%] text-white ">
-        <section className="mb-3 md:px-20 py-3 font-inter text-[#999ca0] leading-relaxed md:text-justify">
+          <main className="md:ml-1/3 w-full md:w-2/3 px-8 py-10 ml-0 md:ml-[33.333333%] text-white lg:max-w-[1050px]">
+            {/* aboutme section */}
+              <section className="mb-3 md:px-20 py-3 font-inter text-[#999ca0] leading-relaxed md:text-justify">
                   <h3 className="sm:hidden font-inter mb-1 border-b-1 border-blue-300 w-[100px] text-blue-100 text-[10px]">ABOUT ME</h3>
                    <p>I'm a frontend engineer who is result-driven, with expertise in React ecosystem, delivering responsive web applications that balance technical excellence with outstanding user experiences. Skilled at translating complex requirements into clean, efficient code while collaborating effectively across teams.</p>
               </section>
               <section className="mb-20 group md:px-20 md:py-3 font-inter text-[#999ca0]  ">
                   <p className="leading-relaxed tracking-normal">I'm currently a Graduate Trainee in the Frontend Engineering Team at <a href="https://seerbit.com" target="_blank" rel="noopener noreferrer" className=" group-hover:text-amber-600 text-white md:ml-1">Seerbit</a>, a fintech company focused on powering seamless digital payments across Africa. I contribute to building user-facing components that support payment solutions for merchants and businesses. From developing responsive UI to collaborating with cross functional teams on dashboard and checkout experiences, I am growing my skills in shipping real, production level financial technology products.
                   </p>
-                  
-                  
-                  
               </section>
+            {/* end of ams */}
+
+              {/* experience section */}
               <section className="md:px-20">
-              <h3 className="sm:hidden font-inter mb-2 border-b-1 border-blue-300 w-[150px] text-blue-100 text-[10px]">PROFESSIONAL EXPERIENCE</h3>
+                <h3 className="sm:hidden font-inter mb-2 border-b-1 border-blue-300 w-[150px] text-blue-100 text-[10px]">PROFESSIONAL EXPERIENCE</h3>
                   <Experience date="2025 - PRESENT" title="Frontend Trainee, Seerbit" details="Supporting the development of web interfaces using React and Tailwind CSS. Assist with API testing using Postman, contribute to internal documentation, and carry out research to support feature implementation. Collaborate with other teams to build clean, responsive user experiences." data={ ["JavaScript", "TypeScript", "React", "Redux", "TailwindCSS"]} />
                   <Experience date="2023 - 2024" title="Frontend Intern, Thels Impact Consulting" details="Contributed to the development and styling of responsive web platforms and internal tools aimed at transforming higher education in Africa. Collaborated with cross-functional teams to build and refine user interfaces for research and innovation-focused websites and dashboards. Played a key role in translating design specs into functional, scalable components, while supporting UI consistency and improving user experience across various education tech projects" data={ ["JavaScript", "React", "TailwindCSS"]} />
                  
-        </section>
-        <section>
-          <WorkExperience/>
-        </section>
+              </section>
+              {/* end of es */}
+
+              {/* skills section */}
+              <section>
+                <WorkExperience/>
+              </section>
+              {/* end of skills section */}
+
+              <section>
+                <ProjectSection/>
+              </section>
+
+              <section>
+                <OtherInterests/>
+              </section>
+
+              <section>
+                <ContactSection/>
+              </section>
         
         
           </main>
@@ -145,7 +172,7 @@ function WorkExperience() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-gray-900 text-white p-6 max-w-5xl lg:pl-50 lg:max-w-3xl mx-auto">
+    <section className="border border-gray-500 rounded-md text-white p-6 max-w-5xl lg:pl-20 lg:max-w-[810px] mx-auto md:ml-18 md:max-w-[410px] lg:ml-20">
       <h2 className="text-xl font-bold mb-6 font-inter">Skills and Technologies</h2>
       <div className="flex flex-col md:flex-row">
         {/* Tabs */}
